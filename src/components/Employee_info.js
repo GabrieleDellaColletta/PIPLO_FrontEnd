@@ -7,7 +7,7 @@ function Employee_info(props) {
     return (
         <div className='employee'>        
 
-            <div className='employee_name'>{props.name}</div>
+            <div className='employee'>{props.name}</div>
             <div className='employee_wage'>{props.wage}€/m</div>
             <div className='employee_role'>{props.role}</div>
             <div>dal: <Date_object date={props.hired}/></div>

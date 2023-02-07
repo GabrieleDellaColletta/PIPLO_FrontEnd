@@ -1,42 +1,53 @@
 import logo from './logo.svg';
 import './App.css';
-import Employee_info from './components/Employee_info';
+import Employee from './components/Employee_info';
+import Date_object from './components/Date_object';
 
 function App() {
+const data_1 = new Date(2023, 2, 6);
 
-  const Employee_infos = [
+  const employees = [
     {
       id: 0,
-      name: 'Jonathan Giulemani',
+      cod_fisc: 'CLLRHR96B01L321O',
+      name: 'RICHARD',
+      surname: 'COLLO',
       role: 'Impiegato',
       wage: 1500,
       hired: new Date(2020, 11, 11),
     },
     {
       id: 1,
-      name: 'Piero Nani',
+      cod_fisc: 'CLLRHR96B01L321O',
+      name: 'Piero',
+      surname: 'Nani',
       role: 'Sguattero',
       wage: 1200,
       hired: new Date(2019, 3, 16),
     },
     {
       id: 2,
-      name: 'Andrew Tate',
+      name: 'Andrew',
+      surname: 'Tate',
       role: 'TopG',
       wage: 9999999,
       hired: new Date(2021, 5, 6),
     },
     {
       id: 3,
-      name: 'Peter Griffin',
+      cod_fisc: 'CLLRHR96B01L321O',
+      name: 'Peter',
+      surname: 'Griffin',
       role: 'Loser',
       wage: 200,
       hired: new Date(2020,93, 23),
     },    
     {
       id: 4,
-      name: 'ciccio buriccio',
-      role: 'n-',
+      cod_fisc: 'CLLRHR96B01L321O',
+      name: 'Ciccio',
+      surname: 'Buriccio',
+      role: 'Receptionist',
       wage: 3,
       hired: new Date(2022, 1, 2),
     },
@@ -44,38 +55,47 @@ function App() {
 
   return (
     <div className="App">
-      <div>
-        <Employee_info
-          name={Employee_infos[0].name}
-          role={Employee_infos[0].role}
-          wage={Employee_infos[0].wage}
-          hired={Employee_infos[0].hired}
-        />
-        <Employee_info
-          name={Employee_infos[1].name}
-          role={Employee_infos[1].role}
-          wage={Employee_infos[1].wage}
-          hired={Employee_infos[1].hired}
-        />
-        <Employee_info
-          name={Employee_infos[2].name}
-          role={Employee_infos[2].role}
-          wage={Employee_infos[2].wage}
-          hired={Employee_infos[2].hired}
-        />
-        <Employee_info
-          name={Employee_infos[3].name}
-          role={Employee_infos[3].role}
-          wage={Employee_infos[3].wage}
-          hired={Employee_infos[3].hired}
-        />
-        <Employee_info 
-          name={Employee_infos[4].name} 
-          role={Employee_infos[4].role} 
-          wage={Employee_infos[4].wage}
-          hired={Employee_infos[4].hired}
-        />
-      </div>
+      <Employee
+        cod_fisc={employees[0].cod_fisc}
+        name={employees[0].name}
+        surname={employees[0].surname}
+        role={employees[0].role}
+        wage={employees[0].wage}
+        hired={employees[0].hired}
+      ></Employee>
+      <Employee
+        cod_fisc={employees[1].cod_fisc}
+        name={employees[1].name}
+        surname={employees[2].surname}
+        role={employees[1].role}
+        wage={employees[1].wage}
+        hired={employees[1].hired}
+      ></Employee>
+      <Employee
+        cod_fisc={employees[2].cod_fisc}
+        name={employees[2].name}
+        surname={employees[2].surname}
+        role={employees[2].role}
+        wage={employees[2].wage}
+        hired={employees[2].hired}
+      ></Employee>
+      <Employee
+        cod_fisc={employees[3].cod_fisc}
+        name={employees[3].name}
+        surname={employees[3].surname}
+        role={employees[3].role}
+        wage={employees[3].wage}
+        hired={employees[3].hired}
+      ></Employee>
+      <Employee 
+        od_fisc={employees[4].cod_fisc}
+        name={employees[4].name}
+        surname={employees[4].surname} 
+        role={employees[4].role} 
+        wage={employees[4].wage}
+        hired={employees[4].hired}
+      ></Employee>
+
 
     </div>
   );
