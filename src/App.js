@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Employee_info from './components/Employee_info';
-import Employee_display from './components/Employee_display';
-import Date_object from './components/Date_object';
+import Employee_info from './components/javascript/Employee_info';
+import Employee_display from './components/javascript/Employee_display';
+import Date_object from './components/javascript/Date_object';
+import Menu from './components/javascript/Menu';
+import Menu_item from './components/javascript/Menu_item';
 
 function App() {
 const data_1 = new Date(2023, 2, 6);
@@ -57,8 +59,10 @@ const data_1 = new Date(2023, 2, 6);
 
   return (
     <div className="App">
+    {/*
+    <div className="App">
       <div>
-
+      
         <Employee_info
           cod_fisc={employees[0].cod_fisc}
           name={employees[0].name}
@@ -99,8 +103,14 @@ const data_1 = new Date(2023, 2, 6);
           wage={employees[4].wage}
           hired={employees[4].hired}
         />
+  
+        
+
       </div>
 
+    </div>
+  */}
+    <Menu/>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import './Date_object.css';
+import '../css//Date_object.css';
 
 function Date_object(props) {
     const date = props.date.toISOString();
