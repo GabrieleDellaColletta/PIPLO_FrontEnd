@@ -3,8 +3,11 @@ import './App.css';
 import Employee_info from './components/javascript/Employee_info';
 import Employee_display from './components/javascript/Employee_display';
 import Date_object from './components/javascript/Date_object';
-import Menu from './components/javascript/Menu';
-import Menu_item from './components/javascript/Menu_item';
+/*
+import Menu from './components/unused/Menu';
+import Menu_item from './components/unused/Menu_item';
+*/
+import Navigatore from './components/javascript/Navigatore';
 
 function App() {
 const data_1 = new Date(2023, 2, 6);
@@ -110,7 +113,8 @@ const data_1 = new Date(2023, 2, 6);
 
     </div>
   */}
-    <Menu/>
+      <div><Navigatore/></div>
+    
     </div>
   );
 }
