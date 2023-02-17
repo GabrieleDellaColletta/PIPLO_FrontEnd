@@ -17,10 +17,24 @@ function Navigatore(){
             <SideNav.Nav defaultSelected="home">
                 <NavItem>
                     <NavIcon><i className='fa fa-fw fa-home' style={{fontSize: 2}}/></NavIcon>
-                    <NavText>Presenze</NavText>
+                        <NavText>
+                            <a href="https://www.google.com"  target="_blank" >Presenze</a>
+                        </NavText>
+                </NavItem>
+                <NavItem>
+                    <NavIcon><i className='fa fa-fw fa-home' style={{fontSize: 2}}/></NavIcon>
                     <NavText>Rimborsi spesa</NavText>
+                </NavItem>
+                <NavItem>
+                    <NavIcon><i className='fa fa-fw fa-home' style={{fontSize: 2}}/></NavIcon>
                     <NavText>Richieste/permessi</NavText>
+                </NavItem>
+                <NavItem>
+                    <NavIcon><i className='fa fa-fw fa-home' style={{fontSize: 2}}/></NavIcon>
                     <NavText>Documenti</NavText>
+                </NavItem>
+                <NavItem>
+                    <NavIcon><i className='fa fa-fw fa-home' style={{fontSize: 2}}/></NavIcon>
                     <NavText>Dipendenti</NavText>
                 </NavItem>
             </SideNav.Nav>

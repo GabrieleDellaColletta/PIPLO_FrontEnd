@@ -3,11 +3,19 @@ import './App.css';
 import Employee_info from './components/javascript/Employee_info';
 import Employee_display from './components/javascript/Employee_display';
 import Date_object from './components/javascript/Date_object';
+import HomePage from './components/javascript/Home';
+
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 /*
 import Menu from './components/unused/Menu';
 import Menu_item from './components/unused/Menu_item';
 */
 import Navigatore from './components/javascript/Navigatore';
+
+const router = createBrowserRouter([
+  {path: '/', element: <HomePage/> },
+  {}
+]);
 
 function App() {
 const data_1 = new Date(2023, 2, 6);
@@ -61,7 +69,9 @@ const data_1 = new Date(2023, 2, 6);
   ];
 
   return (
+    
     <div className="App">
+    <RouterProvider router={router}/>
     {/*
     <div className="App">
       <div>
