@@ -9,7 +9,7 @@
     background-color: #4b4b4b;
   }
   
-  .employee-description {
+  .employee-role {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -17,13 +17,12 @@
     flex-flow: column-reverse;
     justify-content: flex-start;
     flex: 1;
+    font-size: 1.5rem;
   }
-  
   
   .employee-role h2 {
     color: #3a3a3a;
-    font-size: 1rem;
-    text-align: center;
+    font-size: 2rem;
     flex: 1;
     margin: 0 1rem;
     color: white;
@@ -55,21 +54,4 @@
       font-size: 1.25rem;
       padding: 0.5rem 1.5rem;
     }
-  }
-
-  .container {
-    display: flex;  /*definisce che questo è un flex container*/
-    flex-direction: row; /*ordina gli elementi in riga da sinistra a destra*/
-    justify-content: flex-start; /*allinea alla parte sinistra della pagina
-    gap: 10px 20px; /*row-gap = 10     column-gap = 20*/
-  }
-
-  .item {
-    order: 5;
-    flex: 1, 1, auto;
-    /*
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
-    */
   }
