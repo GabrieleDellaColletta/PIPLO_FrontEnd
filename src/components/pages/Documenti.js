@@ -1,5 +1,5 @@
 function Documenti(){
-    return<div className="page">Home</div>;
+    return<div className="page">Documenti</div>;
 }
 
 export default Documenti;

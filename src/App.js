@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 import Dipendenti from './components/pages/Dipendenti';
+import Dipendenti_gruppi from './components/pages/Dipendenti_gruppi';
+import Dipendenti_individuali from './components/pages/Dipendenti_individuali';
 import Documenti from './components/pages/Documenti';
 import Presenze from './components/pages/Presenze';
 import Richieste_permessi from './components/pages/Richieste_permessi';
@@ -67,6 +69,8 @@ const data_1 = new Date(2023, 2, 6);
           <Route path='/richieste_permessi' element={<Richieste_permessi/>}/>
           <Route path='/documenti' element={<Documenti/>}/>
           <Route path='/dipendenti' element={<Dipendenti/>}/>
+          <Route path='/dipendenti_gruppi' element={<Dipendenti_gruppi/>}/>
+          <Route path='/dipendenti_individuali' element={<Dipendenti_individuali/>}/>
         </Routes>
     </Router>
 

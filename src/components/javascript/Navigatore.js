@@ -49,11 +49,11 @@ function Navigatore(){
                     <NavIcon><i className='fa-solid fa-users' style={{fontSize: 20}}/></NavIcon>
                     <NavText>Dipendenti</NavText>
 
-                    <NavItem eventKey="Individuale">
-                        <NavText>Individuale</NavText>
+                    <NavItem eventKey="Dipendenti_individuali">
+                        <NavText>Individuali</NavText>
                     </NavItem>
 
-                    <NavItem eventKey="Gruppi">
+                    <NavItem eventKey="Dipendenti_gruppi">
                         <NavText>Gruppi</NavText>
                     </NavItem>
                 </NavItem>

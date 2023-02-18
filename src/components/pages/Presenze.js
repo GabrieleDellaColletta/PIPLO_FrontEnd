@@ -1,5 +1,5 @@
 function Presenze(){
-    return<div className="page">Home</div>;
+    return<div className="page">Presenze</div>;
 }
 
 export default Presenze;
