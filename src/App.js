@@ -1,12 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-<<<<<<< Updated upstream
-import Employee from './components/Employee';
-import Calendar from './components/Calendar';
-=======
-import Employee_info from './components/javascript/Employee_info';
-import Employee_display from './components/javascript/Employee_display';
-import Date_object from './components/javascript/Date_object';
 
 import Dipendenti from './components/pages/Dipendenti';
 import Documenti from './components/pages/Documenti';
@@ -28,7 +21,6 @@ const router = createBrowserRouter([
   {}
 ]);
 */
->>>>>>> Stashed changes
 
 function App() {
 const data_1 = new Date(2023, 2, 6);
@@ -67,34 +59,6 @@ const data_1 = new Date(2023, 2, 6);
   ];
 
   return (
-<<<<<<< Updated upstream
-    <div className="App">
-      <Employee
-        name={employees[0].name}
-        role={employees[0].role}
-        wage={employees[0].wage}
-      ></Employee>
-      <Employee
-        name={employees[1].name}
-        role={employees[1].role}
-        wage={employees[1].wage}
-      ></Employee>
-      <Employee
-        name={employees[2].name}
-        role={employees[2].role}
-        wage={employees[2].wage}
-      ></Employee>
-      <Employee
-        name={employees[3].name}
-        role={employees[3].role}
-        wage={employees[3].wage}
-      ></Employee>
-      <Employee 
-        name={employees[4].name} 
-        role={employees[4].role} 
-        wage={employees[4].wage}
-      ></Employee>
-=======
     <Router>
       <Navigatore/>
         <Routes>
@@ -176,15 +140,11 @@ export default App;
         />
   
         
->>>>>>> Stashed changes
 
 
     </div>
-<<<<<<< Updated upstream
   );
 }
 
 export default App;
-=======
   */}
->>>>>>> Stashed changes
