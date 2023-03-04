@@ -1,3 +1,4 @@
+import '../../App.css';
 function Richieste_permessi(){
     return<div className="page">Richieste Di Permessi</div>;
 }

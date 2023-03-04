@@ -1,9 +1,23 @@
 .App {
   text-align: center;
   background-color: #282c34;
+
 }
-
-
+.navigatore{
+  background-color: #324d83;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.page{
+    font-size: 5rem;
+    text-align: center;
+    background-color: rgb(173, 182, 194);
+    min-width: 100%;
+}
+.Filtri{
+  background-color: #324d83;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
 
 .App-logo {
   height: 40vmin;

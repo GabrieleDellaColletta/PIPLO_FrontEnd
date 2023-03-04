@@ -16,6 +16,7 @@ import Menu from './components/unused/Menu';
 import Menu_item from './components/unused/Menu_item';
 */
 import Navigatore from './components/javascript/Navigatore';
+import Filtri from './components/javascript/Filtri';
 
 /*
 const router = createBrowserRouter([
@@ -74,6 +75,7 @@ const data_1 = new Date(2023, 2, 6);
         </Routes>
     </Router>
 
+    
 
     /*
     <div className="App">
