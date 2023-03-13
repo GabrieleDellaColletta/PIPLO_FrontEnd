@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-
+//questo dovrebbe servire a far si che se si clicca al di fuori del menu di navigazione laterale il menu si chiude, ma non è ancora stato implementato
 export default class ClickOutside extends Component {
   static propTypes = {
     onClickOutside: PropTypes.func.isRequired

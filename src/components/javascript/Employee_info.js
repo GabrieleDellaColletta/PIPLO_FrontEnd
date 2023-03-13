@@ -1,7 +1,7 @@
 import '../css/Employee_info.css';
-import '../css/Card.css';
-import Card from '../javascript/Card';
-import Date_object from '../javascript/Date_object';
+//import '../../App.css';
+import Card from './Card';
+import Date_object from './Date_object';
 
 function Employee_info(props) {
     

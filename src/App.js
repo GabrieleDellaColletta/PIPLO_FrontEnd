@@ -17,6 +17,7 @@ import Menu_item from './components/unused/Menu_item';
 */
 import Navigatore from './components/javascript/Navigatore';
 import Filtri from './components/javascript/Filtri';
+import Employee_display from './components/javascript/Employee_display';
 
 /*
 const router = createBrowserRouter([
@@ -28,44 +29,15 @@ const router = createBrowserRouter([
 function App() {
 const data_1 = new Date(2023, 2, 6);
 
-  const employees = [
-    {
-      id: 0,
-      name: 'Jonathan Giulemani',
-      role: 'Impiegato',
-      wage: 1500,
-    },
-    {
-      id: 1,
-      name: 'Piero Nani',
-      role: 'Sguattero',
-      wage: 1200,
-    },
-    {
-      id: 2,
-      name: 'Andrew Tate',
-      role: 'TopG',
-      wage: 9999999,
-    },
-    {
-      id: 3,
-      name: 'Peter Griffin',
-      role: 'Loser',
-      wage: 200,
-    },    
-    {
-      id: 4,
-      name: 'ciccio buriccio',
-      role: 'n-',
-      wage: 3,
-    },
-  ];
+  
 
   return (
+    <div>
     <Router>
+      
       <Navigatore/>
         <Routes>
-          <Route path='/presenze' element={<Presenze/>}/>
+          {<Route path='/presenze' element={<Presenze/>}/>}
           <Route path='/rimborsi_spesa' element={<Rimborsi_spesa/>}/>
           <Route path='/richieste_permessi' element={<Richieste_permessi/>}/>
           <Route path='/documenti' element={<Documenti/>}/>
@@ -74,6 +46,7 @@ const data_1 = new Date(2023, 2, 6);
           <Route path='/dipendenti_individuali' element={<Dipendenti_individuali/>}/>
         </Routes>
     </Router>
+    </div>
 
     
 
