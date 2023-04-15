@@ -1,13 +1,14 @@
 //import '../css/page.css';
 import '../../App.css';
 import Employee_info from '../javascript/Employee_info';
-import Employee_display from '../javascript/Employee_display';
+import Employee_display from '../unused/Employee_display';
 function Dipendenti_individuali(){
 
     const employees = [
         {
           id: 0,
           cod_fisc: 'CLLRHR96B01L321O',
+          //img: '..\..\img\andrewTate.jpeg',
           name: 'RICHARD',
           surname: 'COLLO',
           role: 'Impiegato',
@@ -17,6 +18,7 @@ function Dipendenti_individuali(){
         {
           id: 1,
           cod_fisc: 'CLLRHR96B01L321O',
+          //img: '..\..\img\andrewTate.jpeg',
           name: 'Piero',
           surname: 'Nani',
           role: 'Sguattero',
@@ -26,6 +28,7 @@ function Dipendenti_individuali(){
         {
           id: 2,
           cod_fisc: 'CLLRHR96B01L321O',
+          //img: "../../img/andrewTate.jpeg",
           name: 'Andrew',
           surname: 'Tate',
           role: 'TopG',
@@ -35,6 +38,7 @@ function Dipendenti_individuali(){
         {
           id: 3,
           cod_fisc: 'CLLRHR96B01L321O',
+          //img: '..\..\img\andrewTate.jpeg',
           name: 'Peter',
           surname: 'Griffin',
           role: 'Disoccupato',
@@ -44,6 +48,7 @@ function Dipendenti_individuali(){
         {
           id: 4,
           cod_fisc: 'CLLRHR96B01L321O',
+          //img: '..\..\img\andrewTate.jpeg',
           name: 'Ciccio',
           surname: 'Buriccio',
           role: 'Receptionist',
@@ -54,11 +59,12 @@ function Dipendenti_individuali(){
 
     return(
         <div>
-            <div className="page">Dipendenti Individuali</div>
+            <div className="page"><h2>Dipendenti Individuali</h2></div>
             
         <div>
         <Employee_info
           cod_fisc={employees[0].cod_fisc}
+          //img={employees[0].img}
           name={employees[0].name}
           surname={employees[0].surname}
           role={employees[0].role}
@@ -67,6 +73,7 @@ function Dipendenti_individuali(){
         />
         <Employee_info
           cod_fisc={employees[1].cod_fisc}
+          //img={employees[1].img}
           name={employees[1].name}
           surname={employees[1].surname}
           role={employees[1].role}
@@ -75,6 +82,7 @@ function Dipendenti_individuali(){
         />
         <Employee_info
           cod_fisc={employees[2].cod_fisc}
+          //img={employees[2].img}
           name={employees[2].name}
           surname={employees[2].surname}
           role={employees[2].role}
@@ -83,6 +91,7 @@ function Dipendenti_individuali(){
         />
         <Employee_info
           cod_fisc={employees[3].cod_fisc}
+          //img={employees[3].img}
           name={employees[3].name}
           surname={employees[3].surname}
           role={employees[3].role}
@@ -91,6 +100,7 @@ function Dipendenti_individuali(){
         />
         <Employee_info 
           cod_fisc={employees[4].cod_fisc}
+          //img={employees[4].img}
           name={employees[4].name}
           surname={employees[4].surname} 
           role={employees[4].role} 

@@ -1,4 +1,4 @@
-import Employee_info from "./Employee_info";
+import Employee_info from "../javascript/Employee_info";
 
 function Employee_display(props){
         

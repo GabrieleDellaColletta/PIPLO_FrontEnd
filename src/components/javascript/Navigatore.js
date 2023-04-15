@@ -8,6 +8,7 @@ import "@trendmicro/react-sidenav/dist/react-sidenav.css";
 import Menu from "../unused/Menu";
 import Menu_item from "../unused/Menu_item";
 import "../css/navigatore.css";
+import '../../App.css';
 import { useNavigate } from "react-router-dom";
 
 import ClickOutside from "./ClickOutside";

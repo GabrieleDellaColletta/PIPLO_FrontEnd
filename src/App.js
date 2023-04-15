@@ -17,7 +17,7 @@ import Menu_item from './components/unused/Menu_item';
 */
 import Navigatore from './components/javascript/Navigatore';
 import Filtri from './components/javascript/Filtri';
-import Employee_display from './components/javascript/Employee_display';
+import Employee_display from './components/unused/Employee_display';
 
 /*
 const router = createBrowserRouter([
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
 
 function App() {
 const data_1 = new Date(2023, 2, 6);
-
+document.body.style = 'background: rgb(173, 182, 194);';
   
 
   return (
