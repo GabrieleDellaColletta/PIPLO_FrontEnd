@@ -11,6 +11,8 @@ import Rimborsi_spesa from './components/pages/Rimborsi_spesa';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { Box } from "@chakra-ui/react";
 /*
 import Menu from './components/unused/Menu';
 import Menu_item from './components/unused/Menu_item';
@@ -33,9 +35,12 @@ document.body.style = 'background: rgb(173, 182, 194);';
 
   return (
     <div>
-    <Router>
+      <Box display="flex">
       
-      <Navigatore/>
+      
+      <Box position="fixed" width="200px" height="100%" bg="red" /> {
+        <Router>
+        <Navigatore/>
         <Routes>
           {<Route path='/presenze' element={<Presenze/>}/>}
           <Route path='/rimborsi_spesa' element={<Rimborsi_spesa/>}/>
@@ -45,7 +50,9 @@ document.body.style = 'background: rgb(173, 182, 194);';
           <Route path='/dipendenti_gruppi' element={<Dipendenti_gruppi/>}/>
           <Route path='/dipendenti_individuali' element={<Dipendenti_individuali/>}/>
         </Routes>
-    </Router>
+      </Router>
+      }
+      </Box>
     </div>
 
     

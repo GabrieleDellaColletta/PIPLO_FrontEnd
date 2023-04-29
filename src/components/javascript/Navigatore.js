@@ -19,8 +19,9 @@ import ClickOutside from "./ClickOutside";
 function Navigatore(){
     const naviga = useNavigate();
 
-    return /*<ClickOutside onClickOutside={() => {this.setState({ expanded: false });}}>*/<SideNav  onSelect= {selected=> { console.log(selected); naviga('/'+ selected) } } className = 'navigatore'>
-                <SideNav.Toggle/>
+    return <div>
+            <SideNav  onSelect= {selected=> { console.log(selected); naviga('/'+ selected) } } className = "navigatore">
+                <SideNav.Toggle />
                 <SideNav.Nav defaultSelected="Presenze">
 
                     <NavItem eventKey="Presenze">
@@ -58,8 +59,8 @@ function Navigatore(){
 
                 </SideNav.Nav>
                     
-        </SideNav>
-    //</ClickOutside>
+            </SideNav>
+        </div>
 
 }
 

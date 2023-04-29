@@ -3,11 +3,16 @@
   background-color: #282c34;
 
 }
+.fix-nav{
+  position: sticky;
+  top: 0;
+}
 .navigatore{
   background-color: #324d83;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: "100%";
-    min-height: '100vh';
+  min-height: '100vh';
+  
 }
 .page{
     font-size: 5rem;
