@@ -13,7 +13,6 @@ function Dipendenti_individuali(){
           sex: 'F',
           email: 'amelia.peer@email.x',
           role: 'Impiegato',
-          wage: 1500,
           hired: new Date(2020, 11, 11),
         },
         {
@@ -24,7 +23,6 @@ function Dipendenti_individuali(){
           sex: 'M',
           email: 'piero.nani@email.x',
           role: 'Sguattero',
-          wage: 1200, 
           hired: new Date(2019, 3, 16),
         },
         {
@@ -35,7 +33,6 @@ function Dipendenti_individuali(){
           sex: 'M',
           email: 'andrew.tate@email.x',
           role: 'TopG',
-          wage: 99999,
           hired: new Date(2021, 5, 6),
         },
         {
@@ -46,7 +43,6 @@ function Dipendenti_individuali(){
           sex: 'M',
           email: 'peter.griffin@email.x',
           role: 'Disoccupato',
-          wage: 200,
           hired: new Date(2020,93, 23),
         },    
         {
@@ -57,7 +53,6 @@ function Dipendenti_individuali(){
           sex: 'M',
           email: 'ciccio.buriccio@email.x',
           role: 'Receptionist',
-          wage: 3,
           hired: new Date(2022, 1, 2),
         },
       ];
@@ -75,7 +70,6 @@ function Dipendenti_individuali(){
           sex={employees[0].sex}
           email={employees[0].email}
           role={employees[0].role}
-          wage={employees[0].wage}
           hired={employees[0].hired}
         />
         <Employee_info
@@ -86,7 +80,6 @@ function Dipendenti_individuali(){
           sex={employees[0].sex}
           email={employees[1].email}
           role={employees[1].role}
-          wage={employees[1].wage}
           hired={employees[1].hired}
         />
         <Employee_info
@@ -97,7 +90,6 @@ function Dipendenti_individuali(){
           sex={employees[0].sex}
           email={employees[2].email}
           role={employees[2].role}
-          wage={employees[2].wage}
           hired={employees[2].hired}
         />
         <Employee_info
@@ -108,7 +100,6 @@ function Dipendenti_individuali(){
           sex={employees[0].sex}
           email ={employees[3].email}
           role={employees[3].role}
-          wage={employees[3].wage}
           hired={employees[3].hired}
         />
         <Employee_info 
@@ -119,7 +110,6 @@ function Dipendenti_individuali(){
           sex={employees[0].sex}
           email ={employees[4].email} 
           role={employees[4].role} 
-          wage={employees[4].wage}
           hired={employees[4].hired}
         />
   

@@ -88,18 +88,7 @@
   color: #e0fbfc;
 }
 
-.employee-wage {
-  flex-basis: 6rem;
-  order: 6;
-  text-align: right;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #e0fbfc;/*
-  background-color: #3D5A80;
-  border: 1px solid #e0fbfc;
-  padding: 0.5rem;
-  border-radius: 12px;*/
-}
+
 
 .employee-hired{
   order: 7;
