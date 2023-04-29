@@ -11,7 +11,6 @@ function Employee_info(props) {
                 <div className='employee-surname'>{props.surname}</div>
                 <div className='employee-sex'>{props.sex}</div>
                 <div className='employee-email'>{props.email}</div>
-                <div className='employee-wage'>{props.wage}€/M</div>
                 <div className='employee-role'>{props.role}</div>
                 <div className='employee-hired'>dal:&nbsp;<Date_object date={props.hired}/></div>
             </div>
