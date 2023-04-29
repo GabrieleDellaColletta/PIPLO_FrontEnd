@@ -7,11 +7,11 @@ function Employee_info(props) {
     return (
         <Card>
             <div className="employee">
-                <div className='container'>{props.cod_fisc}</div>
-                
                 <div className='employee-name'>{props.name}</div>
                 <div className='employee-surname'>{props.surname}</div>
-                <div className='employee-wage'>{props.wage}€/m</div>
+                <div className='employee-sex'>{props.sex}</div>
+                <div className='employee-email'>{props.email}</div>
+                <div className='employee-wage'>{props.wage}€/M</div>
                 <div className='employee-role'>{props.role}</div>
                 <div className='employee-hired'>dal:&nbsp;<Date_object date={props.hired}/></div>
             </div>
