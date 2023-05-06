@@ -12,7 +12,83 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: "100%";
   min-height: '100vh';
+  position: fixed;
+  top: 0;
+  left: 0;
   
+}
+
+.table-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 0.2rem;
+  margin: 0.2rem 0;
+  border-radius: 2px;
+  background-color: #adb6c2;
+  border: 2px solid #595e65;
+  font-size: 25px;
+}
+
+.table-header-1{
+  flex-basis: 10rem;
+  order: 1;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+.table-header-2{
+  flex-basis: 15rem;
+  order: 1;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+.table-header-3{
+  flex-basis: 7rem;
+  order: 1;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+.table-header-4{
+  flex-basis: 18rem;
+  order: 1;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+.table-header-5{
+  flex-basis: 13rem;
+  order: 1;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+.table-header-6{
+  flex-basis: 7rem;
+  order: 1;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  justify-content: flex-start;
+  font-weight: bold;
 }
 .page{
     font-size: 5rem;

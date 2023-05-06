@@ -35,12 +35,10 @@ document.body.style = 'background: rgb(173, 182, 194);';
 
   return (
     <div>
-      <Box display="flex">
-      
-      
-      <Box position="fixed" width="200px" height="100%" bg="red" /> {
+    
         <Router>
         <Navigatore/>
+        
         <Routes>
           {<Route path='/presenze' element={<Presenze/>}/>}
           <Route path='/rimborsi_spesa' element={<Rimborsi_spesa/>}/>
@@ -51,8 +49,7 @@ document.body.style = 'background: rgb(173, 182, 194);';
           <Route path='/dipendenti_individuali' element={<Dipendenti_individuali/>}/>
         </Routes>
       </Router>
-      }
-      </Box>
+      
     </div>
 
     

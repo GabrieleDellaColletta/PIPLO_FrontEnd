@@ -10,7 +10,7 @@ import Menu_item from "../unused/Menu_item";
 import "../css/navigatore.css";
 import '../../App.css';
 import { useNavigate } from "react-router-dom";
-
+import { Box } from "@chakra-ui/react";
 import ClickOutside from "./ClickOutside";
 
 
@@ -19,8 +19,8 @@ import ClickOutside from "./ClickOutside";
 function Navigatore(){
     const naviga = useNavigate();
 
-    return <div>
-            <SideNav  onSelect= {selected=> { console.log(selected); naviga('/'+ selected) } } className = "navigatore">
+    return <div >
+            <SideNav  onSelect= {selected=> { console.log(selected); naviga('/'+ selected) } } className = "navigatore" style={{ position: 'fixed', top: 0, left: 0 }}>
                 <SideNav.Toggle />
                 <SideNav.Nav defaultSelected="Presenze">
 

@@ -1,6 +1,7 @@
 //import '../css/page.css';
 import '../../App.css';
 import Employee_info from '../javascript/Employee_info';
+import TableHeader from '../javascript/TableHeader';
 import Employee_display from '../unused/Employee_display';
 function Dipendenti_individuali(){
 
@@ -51,193 +52,196 @@ function Dipendenti_individuali(){
           hired: new Date(2022, 1, 2),
         },
       ];
-
+    const headers = ["Nome", "Cognome", "Sesso", "Email", "Ruolo", "Assunto il"];
     return(
         <div>
-            <div className="page"><h2>Dipendenti Individuali</h2></div>
-            
-        <div>
-        <Employee_info
-          name={employees[0].name}
-          surname={employees[0].surname}
-          sex={employees[0].sex}
-          email={employees[0].email}
-          role={employees[0].role}
-          hired={employees[0].hired}
-        />
-        <Employee_info
-          name={employees[1].name}
-          surname={employees[1].surname}
-          sex={employees[0].sex}
-          email={employees[1].email}
-          role={employees[1].role}
-          hired={employees[1].hired}
-        />
-        <Employee_info
-          name={employees[2].name}
-          surname={employees[2].surname}
-          sex={employees[0].sex}
-          email={employees[2].email}
-          role={employees[2].role}
-          hired={employees[2].hired}
-        />
-        <Employee_info
-          name={employees[3].name}
-          surname={employees[3].surname}
-          sex={employees[0].sex}
-          email ={employees[3].email}
-          role={employees[3].role}
-          hired={employees[3].hired}
-        />
-        <Employee_info 
-          name={employees[4].name}
-          surname={employees[4].surname}
-          sex={employees[0].sex}
-          email ={employees[4].email} 
-          role={employees[4].role} 
-          hired={employees[4].hired}
-        />
-        <Employee_info 
-          name={employees[4].name}
-          surname={employees[4].surname}
-          sex={employees[0].sex}
-          email ={employees[4].email} 
-          role={employees[4].role} 
-          hired={employees[4].hired}
-        />
-        <Employee_info 
-          name={employees[4].name}
-          surname={employees[4].surname}
-          sex={employees[0].sex}
-          email ={employees[4].email} 
-          role={employees[4].role} 
-          hired={employees[4].hired}
-        />
-        <Employee_info 
-          name={employees[4].name}
-          surname={employees[4].surname}
-          sex={employees[0].sex}
-          email ={employees[4].email} 
-          role={employees[4].role} 
-          hired={employees[4].hired}
-        />
-        <Employee_info
-          name={employees[1].name}
-          surname={employees[1].surname}
-          sex={employees[0].sex}
-          email={employees[1].email}
-          role={employees[1].role}
-          hired={employees[1].hired}
-        />
-        <Employee_info
-          name={employees[2].name}
-          surname={employees[2].surname}
-          sex={employees[0].sex}
-          email={employees[2].email}
-          role={employees[2].role}
-          hired={employees[2].hired}
-        />
-        <Employee_info
-          name={employees[3].name}
-          surname={employees[3].surname}
-          sex={employees[0].sex}
-          email ={employees[3].email}
-          role={employees[3].role}
-          hired={employees[3].hired}
-        />
-        <Employee_info 
-          name={employees[4].name}
-          surname={employees[4].surname}
-          sex={employees[0].sex}
-          email ={employees[4].email} 
-          role={employees[4].role} 
-          hired={employees[4].hired}
-        />
-        <Employee_info 
-          name={employees[4].name}
-          surname={employees[4].surname}
-          sex={employees[0].sex}
-          email ={employees[4].email} 
-          role={employees[4].role} 
-          hired={employees[4].hired}
-        />
-        <Employee_info 
-          name={employees[4].name}
-          surname={employees[4].surname}
-          sex={employees[0].sex}
-          email ={employees[4].email} 
-          role={employees[4].role} 
-          hired={employees[4].hired}
-        />
-        <Employee_info 
-          name={employees[4].name}
-          surname={employees[4].surname}
-          sex={employees[0].sex}
-          email ={employees[4].email} 
-          role={employees[4].role} 
-          hired={employees[4].hired}
-        /><Employee_info
-        name={employees[1].name}
-        surname={employees[1].surname}
-        sex={employees[0].sex}
-        email={employees[1].email}
-        role={employees[1].role}
-        hired={employees[1].hired}
-      />
-      <Employee_info
-        name={employees[2].name}
-        surname={employees[2].surname}
-        sex={employees[0].sex}
-        email={employees[2].email}
-        role={employees[2].role}
-        hired={employees[2].hired}
-      />
-      <Employee_info
-        name={employees[3].name}
-        surname={employees[3].surname}
-        sex={employees[0].sex}
-        email ={employees[3].email}
-        role={employees[3].role}
-        hired={employees[3].hired}
-      />
-      <Employee_info 
-        name={employees[4].name}
-        surname={employees[4].surname}
-        sex={employees[0].sex}
-        email ={employees[4].email} 
-        role={employees[4].role} 
-        hired={employees[4].hired}
-      />
-      <Employee_info 
-        name={employees[4].name}
-        surname={employees[4].surname}
-        sex={employees[0].sex}
-        email ={employees[4].email} 
-        role={employees[4].role} 
-        hired={employees[4].hired}
-      />
-      <Employee_info 
-        name={employees[4].name}
-        surname={employees[4].surname}
-        sex={employees[0].sex}
-        email ={employees[4].email} 
-        role={employees[4].role} 
-        hired={employees[4].hired}
-      />
-      <Employee_info 
-        name={employees[4].name}
-        surname={employees[4].surname}
-        sex={employees[0].sex}
-        email ={employees[4].email} 
-        role={employees[4].role} 
-        hired={employees[4].hired}
-      />
-  
-        
+            <div className="page">
+              <h2>Dipendenti Individuali</h2>
+              
+            </div>
+            <div> 
+              <TableHeader/>
+              <Employee_info
+                name={employees[0].name}
+                surname={employees[0].surname}
+                sex={employees[0].sex}
+                email={employees[0].email}
+                role={employees[0].role}
+                hired={employees[0].hired}
+              />
+              <Employee_info
+                name={employees[1].name}
+                surname={employees[1].surname}
+                sex={employees[1].sex}
+                email={employees[1].email}
+                role={employees[1].role}
+                hired={employees[1].hired}
+              />
+              <Employee_info
+                name={employees[2].name}
+                surname={employees[2].surname}
+                sex={employees[2].sex}
+                email={employees[2].email}
+                role={employees[2].role}
+                hired={employees[2].hired}
+              />
+              <Employee_info
+                name={employees[3].name}
+                surname={employees[3].surname}
+                sex={employees[3].sex}
+                email ={employees[3].email}
+                role={employees[3].role}
+                hired={employees[3].hired}
+              />
+              <Employee_info 
+                name={employees[4].name}
+                surname={employees[4].surname}
+                sex={employees[4].sex}
+                email ={employees[4].email} 
+                role={employees[4].role} 
+                hired={employees[4].hired}
+              />
+              <Employee_info 
+                name={employees[4].name}
+                surname={employees[4].surname}
+                sex={employees[4].sex}
+                email ={employees[4].email} 
+                role={employees[4].role} 
+                hired={employees[4].hired}
+              />
+              <Employee_info 
+                name={employees[4].name}
+                surname={employees[4].surname}
+                sex={employees[4].sex}
+                email ={employees[4].email} 
+                role={employees[4].role} 
+                hired={employees[4].hired}
+              />
+              <Employee_info 
+                name={employees[4].name}
+                surname={employees[4].surname}
+                sex={employees[4].sex}
+                email ={employees[4].email} 
+                role={employees[4].role} 
+                hired={employees[4].hired}
+              />
+              <Employee_info
+                name={employees[1].name}
+                surname={employees[1].surname}
+                sex={employees[1].sex}
+                email={employees[1].email}
+                role={employees[1].role}
+                hired={employees[1].hired}
+              />
+              <Employee_info
+                name={employees[2].name}
+                surname={employees[2].surname}
+                sex={employees[2].sex}
+                email={employees[2].email}
+                role={employees[2].role}
+                hired={employees[2].hired}
+              />
+              <Employee_info
+                name={employees[3].name}
+                surname={employees[3].surname}
+                sex={employees[0].sex}
+                email ={employees[3].email}
+                role={employees[3].role}
+                hired={employees[3].hired}
+              />
+              <Employee_info 
+                name={employees[4].name}
+                surname={employees[4].surname}
+                sex={employees[0].sex}
+                email ={employees[4].email} 
+                role={employees[4].role} 
+                hired={employees[4].hired}
+              />
+              <Employee_info 
+                name={employees[4].name}
+                surname={employees[4].surname}
+                sex={employees[0].sex}
+                email ={employees[4].email} 
+                role={employees[4].role} 
+                hired={employees[4].hired}
+              />
+              <Employee_info 
+                name={employees[4].name}
+                surname={employees[4].surname}
+                sex={employees[0].sex}
+                email ={employees[4].email} 
+                role={employees[4].role} 
+                hired={employees[4].hired}
+              />
+              <Employee_info 
+                name={employees[4].name}
+                surname={employees[4].surname}
+                sex={employees[0].sex}
+                email ={employees[4].email} 
+                role={employees[4].role} 
+                hired={employees[4].hired}
+              /><Employee_info
+              name={employees[1].name}
+              surname={employees[1].surname}
+              sex={employees[0].sex}
+              email={employees[1].email}
+              role={employees[1].role}
+              hired={employees[1].hired}
+              />
+              <Employee_info
+                name={employees[2].name}
+                surname={employees[2].surname}
+                sex={employees[0].sex}
+                email={employees[2].email}
+                role={employees[2].role}
+                hired={employees[2].hired}
+              />
+              <Employee_info
+                name={employees[3].name}
+                surname={employees[3].surname}
+                sex={employees[0].sex}
+                email ={employees[3].email}
+                role={employees[3].role}
+                hired={employees[3].hired}
+              />
+              <Employee_info 
+                name={employees[4].name}
+                surname={employees[4].surname}
+                sex={employees[0].sex}
+                email ={employees[4].email} 
+                role={employees[4].role} 
+                hired={employees[4].hired}
+              />
+              <Employee_info 
+                name={employees[4].name}
+                surname={employees[4].surname}
+                sex={employees[0].sex}
+                email ={employees[4].email} 
+                role={employees[4].role} 
+                hired={employees[4].hired}
+              />
+              <Employee_info 
+                name={employees[4].name}
+                surname={employees[4].surname}
+                sex={employees[0].sex}
+                email ={employees[4].email} 
+                role={employees[4].role} 
+                hired={employees[4].hired}
+              />
+              <Employee_info 
+                name={employees[4].name}
+                surname={employees[4].surname}
+                sex={employees[0].sex}
+                email ={employees[4].email} 
+                role={employees[4].role} 
+                hired={employees[4].hired}
+              />
+          
+              
 
 
-    </div>
-        </div>
+            </div>
+          s</div>
     );
 }
 
