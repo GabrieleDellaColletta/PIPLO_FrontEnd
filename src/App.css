@@ -1,3 +1,53 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  
+}
+
+.pagination ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination ul li {
+  margin: 0 0.2rem;
+}
+
+.pagination ul li button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.pagination ul li button.active {
+  background-color: #324d83;
+  border: 1px solid #0077cc;
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 5px;
+}
+
+.pagination ul li button:hover {
+  background-color: #324d83;
+  border: 1px solid #0077cc;
+  color: #fff;
+  
+}
+
+.pagination ul li .pagination-button-horizontal {
+  display: inline-block;
+  margin: 0;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
 .App {
   text-align: center;
   background-color: #282c34;
@@ -52,7 +102,7 @@
   font-weight: bold;
 }
 .table-header-3{
-  flex-basis: 7rem;
+  flex-basis: 9rem;
   order: 1;
   align-items: flex-start;
   flex-direction: column;
@@ -99,6 +149,9 @@
     min-height: '100vh';
 
 }
+.page h2{
+  font-size: 90px;
+}
 
 .Filtri{
   background-color: #324d83;
@@ -142,13 +195,13 @@
   font-weight: bold;
 }
 .employee-sex{
-  flex-basis: 1rem;
+  flex-basis: 4rem;
   order: 3;
   flex-direction: column;
   gap: 1rem;
   align-items: flex-end;
   flex-flow: column-reverse;
-  justify-content: flex-start;
+  justify-content: center;
   font-weight: bold;
 }
 .employee-email{
