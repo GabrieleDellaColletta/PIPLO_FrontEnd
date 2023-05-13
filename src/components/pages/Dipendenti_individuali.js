@@ -3,6 +3,7 @@ import '../../App.css';
 import Employee_info from '../javascript/Employee_info';
 import TableHeader from '../javascript/TableHeader';
 import Employee_display from '../unused/Employee_display';
+
 function Dipendenti_individuali(){
 
     const employees = [
